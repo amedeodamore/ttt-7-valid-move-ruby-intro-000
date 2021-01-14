@@ -12,5 +12,12 @@ end
 end
 
 def position_taken?(board, index)
-board[index] != " "
+  taken = nil
+  if (board[index] == " " or board[index] == "" or board[index] == nil)
+    taken = false
+  else
+    taken = true
+end
+taken
+
 end
