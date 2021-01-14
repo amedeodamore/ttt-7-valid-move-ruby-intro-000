@@ -3,14 +3,6 @@
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
-def valid_move?(board, index)
-if index.between?(1,9)
-  if !position_taken?(board, index)
-    true
-end
-end
-end
-
 def position_taken?(board, index)
   taken = nil
   if (board[index] == " " or board[index] == "" or board[index] == nil)
@@ -20,4 +12,12 @@ def position_taken?(board, index)
 end
 taken
 
+end
+
+def valid_move?(board, index)
+if index.between?(1,9)
+  if !position_taken?(board, index)
+    true
+end
+end
 end
