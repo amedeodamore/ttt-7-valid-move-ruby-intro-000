@@ -17,11 +17,11 @@ end
 
 def valid_move?(board, index)
 
-move = nil
+# move = nil
 
-if position_taken? == false && position_taken?.between?(0,8)
-  return true
-else
-  return false
-end
+# if position_taken? == false && position_taken?.between?(0,8)
+#   return true
+# else
+#   return false
+# end
 end
