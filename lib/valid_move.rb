@@ -10,6 +10,10 @@ if index.between?(1,9)
 end
 end
 
+def position_taken?(board, index)
+
+board[index] != " "
+end
 
 
 # move = nil
